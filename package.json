@@ -1,6 +1,6 @@
 {
   "name": "google-map-bounds-limit",
-  "version": "0.0.2-0",
+  "version": "0.0.3-0",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
