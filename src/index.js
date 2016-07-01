@@ -126,7 +126,7 @@ function limitMapMinZoom(map) {
  * @param  {google.maps.Map} map  The google map object
  * @param  {google.maps.LatLngBounds} maxBounds  The bounds limit
  */
-export function limitMap(map, maxBounds) {
+export default function limitMap(map, maxBounds) {
   map.addListener('center_changed', () => {
     limitMapMove(map, maxBounds);
   });
