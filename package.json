@@ -5,8 +5,14 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src --out-dir lib",
+    "build:umd": "browserify --standalone limitMap src/index.js > lib/google-map-bounds-limit.js",
     "clean": "rm -rf lib && mkdir lib",
-    "prepublish": "npm run clean && npm run build"
+    "prepublish": "npm run clean && npm run build && npm run build:umd"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
   },
   "author": "",
   "license": "MIT",
@@ -14,6 +20,7 @@
     "babel-cli": "^6.10.1",
     "babel-eslint": "^6.1.0",
     "babel-preset-es2015": "^6.9.0",
+    "babelify": "^7.3.0",
     "browserify": "^13.0.1",
     "eslint": "^2.13.1"
   },
