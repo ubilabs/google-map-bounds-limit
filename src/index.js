@@ -142,3 +142,6 @@ export default function limitMap(map, maxBounds) {
   // call this once, because the next zoom level might already be too low
   limitMapMinZoom(map);
 }
+
+// for standalone build
+module.exports = limitMap;
