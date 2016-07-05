@@ -3,10 +3,11 @@
   "version": "0.0.3",
   "description": "",
   "main": "lib/index.js",
+  "files": "dist",
   "scripts": {
-    "build": "babel src --out-dir lib",
-    "build:umd": "browserify --standalone limitMap src/index.js > lib/google-map-bounds-limit.js",
-    "clean": "rm -rf lib && mkdir lib",
+    "build": "babel src --out-dir lib && npm run build:umd",
+    "build:umd": "browserify --standalone limitMap src/index.js > dist/google-map-bounds-limit.js",
+    "clean": "rm -rf lib dist && mkdir lib dist",
     "prepublish": "npm run clean && npm run build && npm run build:umd"
   },
   "browserify": {
