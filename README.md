@@ -33,6 +33,5 @@ const maxBounds = new google.maps.LatLngBounds(
 The actual lat/lng limits (+/-90 and +/-180) won't be reached.
 
 ## Resources
-- **LatLngBounds** (Google Maps JS API Reference): https://developers.google.com/maps/documentation/javascript/reference#LatLngBounds
-- **LatLng** (Google MAps JS API Reference):
-https://developers.google.com/maps/documentation/javascript/reference#LatLng
+- [**LatLngBounds Class** (Google Maps JS API Reference)](https://developers.google.com/maps/documentation/javascript/reference#LatLngBounds)
+- [**LatLng Class** (Google Maps JS API Reference)](https://developers.google.com/maps/documentation/javascript/reference#LatLng)
