@@ -4,9 +4,21 @@ This module limits the map movement and zooming functionality of a provided goog
 
 ## Installation
 
+### npm
+
 ```sh
 npm install google-map-bounds-limit
 ```
+
+### UMD
+
+We also have a standalone build, which you simply can drop in via a `<script/>` tag:
+
+```html
+  <script src="google-map-bounds-limit.js"></script>
+```
+
+The `limitMap()` function is set on the `window` object. The `lib/` directory contains the umd-build.
 ## How to use
 
 ```js
